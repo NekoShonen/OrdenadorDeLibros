@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>To-do List</title>
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="vendor/jquery-ui.min.css" />
+        <link rel="stylesheet" href="assets/todo2.css" />
+    </head>
+
+	
+
+    <body class="well">
+        <div id="container">
+<!--
+            <div id="header"> To Do List </div>
+-->            
+            <div class="menu" id="pending">
+				<h3>Info</h3>
+				<img src="assets/libro1.jpg" alt="Sherlock" style="width:230px;height:300px;">
+				<br>
+				Por Leer
+				<div class="checkbox">
+					  <label><input type="checkbox" value="">Leido</label>
+				</div>
+
+				<div onclick="favoritear()">
+					<div class="favyes btn btn-sm btn-danger"><span class="glyphicon glyphicon-heart"></span>  </div>
+					<div class="favno btn btn-sm btn-default"><span class="glyphicon glyphicon-heart-empty"></span>  </div>
+				</div>
+
+				<button type="button" class="btn btn-success">
+					Leer <span class="glyphicon glyphicon-share-alt"></span>
+				</button>
+			</div>
+			
+			<div class="menu2" id="pending">
+				<h3>Filtrar</h3>
+				<button type="button" class="btn btn-default" align="bottom">
+					Ver Todos <span class="glyphicon glyphicon-book"></span>
+				</button>
+<!--				<button type="button" class="botonNuevo">
+					<span class="glyphicon glyphicon-heart"></span> Favorito
+				</button>
+
+				<button type="button" class="btn btn-default">
+					Filtros <span class="glyphicon glyphicon-align-left"></span> 
+				</button>
+
+				<input type="button" class="btn btn-primary" value="Clear Data" onclick="todo.clear();" />
+-->
+				<button type="button" class="btn btn-default btnizq">
+					Favoritos <span class="glyphicon glyphicon-heart"></span>
+				</button>
+				<br>
+				<button type="button" class="btn btn-default btnizq">
+					Leidos <span class="glyphicon glyphicon-ok"></span>
+				</button> 
+				<br>
+				<button type="button" class="btn btn-default btnizq">
+					No Leidos <span class="glyphicon glyphicon-remove"></span>
+				</button>
+				
+				<button type="button" class="btn btn-default btnizq">
+					Por Leer <span class="glyphicon glyphicon-pushpin"></span>
+				</button>
+				<!--
+				<button type="button" class="btn btn-default">
+					<span class="glyphicon glyphicon-plus-sign"></span>
+				</button>
+				-->
+
+
+			</div>
+
+			<div class="menu3">
+
+</head>
+<body>
+
+
+				<img class="libro" src="assets/libro1.jpg" alt="Sherlock">
+				<img class="libro" src="assets/libro1.jpg" alt="Sherlock">
+				<img class="libro" src="assets/libro1.jpg" alt="Sherlock">
+				<img class="libro" src="assets/libro1.jpg" alt="Sherlock">
+				<img class="libro" src="assets/libro1.jpg" alt="Sherlock">
+				<img class="libro" src="assets/libro1.jpg" alt="Sherlock">
+				<img class="libro" src="assets/libro1.jpg" alt="Sherlock">
+				<img class="libro" src="assets/libro1.jpg" alt="Sherlock">
+				<img class="libro" src="assets/libro1.jpg" alt="Sherlock">
+</div>
+
+<!-- electron
+			<script type="text/javascript"> window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js');</script>
+            
+-->
+
+<!-- browser -->
+			<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<!-- browser -->
+
+			<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="vendor/jquery-ui.min.js"></script>
+            <script type="text/javascript" src="assets/todo.js"></script>
+
+
+            <script type="text/javascript">
+                $( "#datepicker" ).datepicker();
+                $( "#datepicker" ).datepicker("option", "dateFormat", "dd/mm/yy");
+                $(".task-container").droppable();
+                $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
+                todo.init();
+            </script>
+
+        </div>
+    </body>
+</html>
