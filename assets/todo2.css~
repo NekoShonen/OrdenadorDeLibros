@@ -53,20 +53,6 @@ body {
     padding-bottom: 15px;
 }
 
-.separacion{
-	padding-top:15px;
-	
-}
-
-.marca{
-	width: 350x;
-	float: left;
-	/*margin: 600px -80px;*/
-	margin-top: -60px;
-	margin-right: 0px;
-	margin-left: -185px;
-	
-}
 .menu2{
     width: 200px;
     float: left;
@@ -105,21 +91,6 @@ div.menu3 {
     background-color: #H8000000F;
     width: 600px;
     height: 580px;
-    overflow-y: scroll;
-	
-}
-
-div.sinopsis {
-	
-    border-radius: 10px;
-	padding-bottom: 15px;
-	float: left;
-    margin-top: 10px;
-	margin-left: 15px;
-	/*background-color: #ffffff;*/
-    background-color: #H8000000F;
-    width: 330px;
-    height: 230px;
     overflow-y: scroll;
 	
 }
